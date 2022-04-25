@@ -1,10 +1,9 @@
 import React, { FC } from 'react'
 
-import { ToastComponent, AlertComponent } from 'amis'
 import AMISComponent from '@/features/AMIS/index'
 import { role } from '@/features/AMIS/user'
 
-let amisConfig = {
+const amisConfig = {
   type: 'page',
   body: [
     {

@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 import AMISComponent from '@/features/AMIS/index'
 
-let amisConfig = {
+const amisConfig = {
   type: 'page',
   body: [
     {

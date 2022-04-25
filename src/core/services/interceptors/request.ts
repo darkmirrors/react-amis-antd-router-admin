@@ -1,5 +1,4 @@
 import { AxiosInstance } from 'axios'
-import instance from '../aixos'
 
 /**
  * 实现登录拦截器，在请求前增加token

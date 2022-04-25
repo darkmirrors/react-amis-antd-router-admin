@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 import { alignInRange } from './alignInRange'
 
 // 最小值和最大值的区间为[5,30]，输入的 value 为10，期望输出结果为 10

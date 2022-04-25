@@ -14,25 +14,25 @@ export interface RouterBody {
 const router: Array<RouterBody> = [
   {
     path: '',
-    component: lazy(() => import('@/features/Layouts/index')),
+    component: lazy(() => import('@features/Layouts/index')),
     children: [
-      { path: '', component: lazy(() => import('@/pages/Home')) },
-      { path: '/todo', component: lazy(() => import('@/pages/TodoList')) },
-      { path: '/series', component: lazy(() => import('@/pages/SeriesList')) },
-      { path: '/user', component: lazy(() => import('@/pages/UserList')) },
-      { path: '/antd', component: lazy(() => import('@/pages/AntdExperiment')) },
-      { path: '/tailwind', component: lazy(() => import('@/pages/TailwindExperiment')) },
-      // { path: 'tip', component: lazy(() => import('@/pages/home/components/tip')) },
+      { path: '', component: lazy(() => import('@pages/Home')) },
+      { path: '/todo', component: lazy(() => import('@pages/TodoList')) },
+      { path: '/series', component: lazy(() => import('@pages/SeriesList')) },
+      { path: '/user', component: lazy(() => import('@pages/UserList')) },
+      { path: '/antd', component: lazy(() => import('@pages/AntdExperiment')) },
+      { path: '/tailwind', component: lazy(() => import('@pages/TailwindExperiment')) },
+      // { path: 'tip', component: lazy(() => import('@pages/home/components/tip')) },
     ],
   },
   {
     path: '/Login',
-    component: lazy(() => import('@/pages/Login')),
+    component: lazy(() => import('@pages/Login')),
   },
   {
     path: '*',
     component: lazy(() => import('@/features/Layouts/index')),
-    children: [{ path: '*', component: lazy(() => import('@/pages/404')) }],
+    children: [{ path: '*', component: lazy(() => import('@pages/404')) }],
   },
 ]
 

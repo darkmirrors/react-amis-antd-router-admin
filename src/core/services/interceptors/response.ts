@@ -1,5 +1,5 @@
+import { BACKEND_CODE } from '@/public/constant'
 import { AxiosInstance } from 'axios'
-import instance from '../aixos'
 
 /**
  * 添加 request interceptors，实现请求拦截，如果未登录需要跳转到登录页面
@@ -8,9 +8,9 @@ import instance from '../aixos'
 export const responseLoginInterceptor = (instance: AxiosInstance) => {
   instance.interceptors.response.use(
     (response) => {
-      const { status, data } = response.data
+      const { status } = response.data
 
-      if (response.data.status === 0) {
+      if (response.data.status === BACKEND_CODE.SUCCESS) {
         console.log(status)
       }
       return response

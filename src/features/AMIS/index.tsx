@@ -1,6 +1,6 @@
-import { render as renderAmis, SchemaApi } from 'amis'
+import { render as renderAmis } from 'amis'
 import { Schema } from 'amis/lib/types'
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { env } from './config'
 
 interface IProps {

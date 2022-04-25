@@ -1,4 +1,4 @@
-import { createElement, FC, ReactElement } from 'react'
+import { createElement, ReactElement } from 'react'
 import * as ALLIcon from '@ant-design/icons'
 
 const Icon = (

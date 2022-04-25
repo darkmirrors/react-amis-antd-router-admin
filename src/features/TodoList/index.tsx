@@ -1,8 +1,8 @@
-import { FC, KeyboardEvent, useEffect, useRef, useState } from 'react'
+import { FC, KeyboardEvent } from 'react'
 import { useStores } from '@store/index'
 import TodoItem from './TodoItem'
 import { Form, Input } from 'antd'
-import { inject, observer } from 'mobx-react'
+import { observer } from 'mobx-react'
 import FormItem from 'antd/lib/form/FormItem'
 import { ITodo } from '@/types/todo'
 

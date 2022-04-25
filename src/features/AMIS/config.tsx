@@ -1,7 +1,6 @@
 // import axios from '@services/aixos'
 import axios from 'axios'
 import copy from 'copy-to-clipboard'
-import { alert, confirm } from 'amis/lib/components/Alert'
 import { toast } from 'amis/lib/components/Toast'
 import { NODE_ENV } from '@/public/constant'
 

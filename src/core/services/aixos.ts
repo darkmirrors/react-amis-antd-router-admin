@@ -2,7 +2,6 @@ import axios from 'axios'
 import { NODE_ENV } from '@public/constant'
 import * as requestInterceptors from './interceptors/request'
 import * as responseInterceptors from './interceptors/response'
-import { type } from 'os'
 
 /**
  * baseUrl 分场景映射
@@ -31,7 +30,7 @@ const instance = axios.create({
 /**
  * 添加 request interceptors
  */
-for (let key in requestInterceptors) {
+for (const key in requestInterceptors) {
   if (Object.hasOwnProperty.call(requestInterceptors, key)) {
     const requeseInterceptor = (requestInterceptors as { [key: string]: any })[key] as Function
     if (typeof requeseInterceptor === 'function') {
@@ -43,7 +42,7 @@ for (let key in requestInterceptors) {
 /**
  * 添加 response interceptors
  */
-for (let key in responseInterceptors) {
+for (const key in responseInterceptors) {
   if (Object.hasOwnProperty.call(responseInterceptors, key)) {
     const responseInterceptor = (responseInterceptors as { [key: string]: any })[key] as Function
     if (typeof responseInterceptor === 'function') {

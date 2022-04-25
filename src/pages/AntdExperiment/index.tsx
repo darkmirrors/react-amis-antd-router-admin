@@ -1,18 +1,16 @@
-import { Button, Table, Space, Tag } from 'antd'
+import { Table, Space, Tag } from 'antd'
 import { FC, ReactChild, ReactElement, ReactFragment, ReactPortal, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 
-import axios from '@/services/aixos'
-import { first } from 'rxjs'
+import axios from '@/core/services/aixos'
 import './index.css'
-
-const { ColumnGroup, Column } = Table
 
 const AntdExperiment: FC = (): ReactElement => {
   useEffect(() => {
     axios.get('/series').then((res) => {})
     // console.log(1123)
   })
+
+  const SHOW_FIVE_LINE = 5
 
   const columns = [
     {
@@ -38,7 +36,7 @@ const AntdExperiment: FC = (): ReactElement => {
       render: (tags: any[]) => (
         <>
           {tags.map((tag) => {
-            let color = tag.length > 5 ? 'geekblue' : 'green'
+            let color = tag.length > SHOW_FIVE_LINE ? 'geekblue' : 'green'
             if (tag === 'loser') {
               color = 'volcano'
             }

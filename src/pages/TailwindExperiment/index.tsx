@@ -1,11 +1,6 @@
-import { Button, Table } from 'antd'
-import { FC, ReactElement, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { FC, ReactElement } from 'react'
 
-import { first } from 'rxjs'
 import './index.css'
-
-const { ColumnGroup, Column } = Table
 
 const TailwindExperiment: FC = (): ReactElement => {
   return (

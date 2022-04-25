@@ -4,7 +4,8 @@ import todoRepository from '../repository/todo.repository'
 
 configure({ isolateGlobalState: true })
 
-let id = Number(localStorage.getItem('todoId') || 0)
+const DEFAULT_ID = 0
+let id = Number(localStorage.getItem('todoId') || DEFAULT_ID)
 
 export class TodoStore {
   @observable todos: ITodo[] = JSON.parse(localStorage.getItem('todos') || '[]')
@@ -48,7 +49,7 @@ export class TodoStore {
   @action.bound toggleStatusById(id: number) {
     // console.log('toggleStatusById', id)
     this.todos = this.todos.map((todo) => {
-      console.log(todo.id, id)
+      // console.log(todo.id, id)
       if (todo.id === id) {
         todo.done = !todo.done
       }
