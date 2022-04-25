@@ -22,13 +22,12 @@
       "@domain/*": ["./src/domain/*"],
       "@styles/*": ["./src/styles/*"],
       "@component/*": ["./src/component/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@hooks/*": ["./src/hooks/*"],
       "@store/*": ["./src/core/store/*"],
       "@features/*": ["./src/features/*"],
-      "@config/*": ["./src/config/*"],
-      "@services/*": ["./src/services/*"],
-      "@public/*": ["./src/public/*"]
+      "@services/*": ["./src/core/services/*"],
+      "@public/*": ["./src/public/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@utils/*": ["./src/shared/utils/*"]
     }
   },
   "include": ["src", "types", "src/routessrc/pagessrc/features/layouts/laysrc/amisres/amissrc/public/constant.tst.ts"],
