@@ -1,0 +1,34 @@
+/* amis antd 样式修改案例 */
+:root {
+  --antd-bg-color: rgba(0, 0, 0, 0.06);
+  --borderColor: #f0f0f0;
+  --Modal-header-height: 3.4rem;
+  --Modal-body-borderBottom: var(--Modal-content-borderWidth) solid var(--antd-bg-color);
+  --Modal-body-borderTop: var(--Modal-body-borderBottom);
+}
+
+.antd-Page-body {
+  padding: 0;
+}
+
+/* table 边框样式 */
+.antd-Table-table > thead > tr > th:not(:last-child) {
+  border-right: 0;
+}
+
+.antd-Table-table
+  thead
+  > tr
+  > th:not(:last-child):not(.antd-Table-selection-column):not(.antd-Table-row-expand-icon-cell):not([colspan])::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 1.6em;
+  background-color: var(--antd-bg-color);
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  content: '';
+}
+
+/* table 边框样式 end */

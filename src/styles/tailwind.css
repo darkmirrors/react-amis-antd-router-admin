@@ -1,0 +1,8 @@
+@import url('./btn.css');
+
+/* TODO 如果开启 base 会导致 amis 的基础样式有问题，先屏蔽 */
+/* @tailwind base; */
+
+@tailwind components;
+
+@tailwind utilities;

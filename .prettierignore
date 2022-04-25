@@ -1,0 +1,6 @@
+**/.git
+**/.svn
+*.svg
+**/.hg
+**/node_modules
+**/*.test
